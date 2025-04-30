@@ -34,8 +34,12 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 Lançamento: 29/04/2025
 
-## ⚙️ Como Executar o Projeto
+## ⚙️ Como Executar o Projeto/Ver em Ação:
 
-Clone este repositório:
+1 - Entre no link: https://otaviophellipe.github.io/Login-Cadastro/index.html
+
+ou
+
+2 - Clone este repositório:
    ```bash
    git clone https://github.com/otaviophellipe/Login-Cadastro
