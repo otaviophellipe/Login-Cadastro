@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans',sans-serif;
+            background: #201b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        .cadastro-container {
+            background: #1d182a;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .cadastro-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #e29e3e;
+            color: #000000;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-link {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .login-link a {
+            color: #e29e3e;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .login-link a:hover {
+            color: #e29e3e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cadastro-container">
+        <h2>Cadastro</h2>
+        <form>
+            <div class="form-group">
+                <label for="apelido">Apelido</label>
+                <input type="text" id="apelido" name="apelido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar Senha</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+            </div>
+            <button type="submit" class="submit-btn" style="width: 106%;">CADASTRAR</button>
+        </form>
+        <style>
+            .submit-btn {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                padding: 12px; 
+            }
+
+            .submit-btn::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(226, 158, 62, 0.5);
+                filter: blur(8px);
+                border-radius: 8px;
+                z-index: -1;
+            }
+        </style>
+        <div class="login-link">
+            Já tem uma conta? <a href="index.html">Faça Login</a>
+        </div>
+    <div class="credit" style="margin-top: 20px; text-align: center; font-size: 12px; color: #ddd;">
+        <p>Code by: 
+            <a href="https://www.linkedin.com/in/otaviophellipe/" target="_blank" style="color: #e29e3e; text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 16px; height: 16px; vertical-align: middle;">
+            </a> 
+            | 
+            <a href="https://github.com/otaviophellipe" target="_blank" style="color: #e29e3e; text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 16px; height: 16px; vertical-align: middle;">
+            </a>
+        </p>
+    </div>
+    </div>
+</body>
+</html> 
