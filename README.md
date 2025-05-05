@@ -1,6 +1,7 @@
 <p align="left">
   <a href="https://img.shields.io/badge/Status-%20Concluido-green">
     <img src="https://img.shields.io/badge/Status-%20Concluido-green" alt="Status: Concluído" />
+<img src="https://img.shields.io/badge/License-%20MIT-blue" alt="MIT" />
   </a>
 </p>
 <div style="display: flex; justify-content: space-around; align-items: center;">
