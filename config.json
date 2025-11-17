@@ -1,0 +1,20 @@
+{
+  "site": {
+    "name": "Login System",
+    "version": "1.0.0",
+    "author": "Otavio Phellipe"
+  },
+  "api": {
+    "loginEndpoint": "login.php",
+    "registerEndpoint": "register.php"
+  },
+  "themes": {
+    "primaryColor": "#e29e3e",
+    "backgroundColor": "#201b2c",
+    "textColor": "#f0ffffde"
+  },
+  "validation": {
+    "minPasswordLength": 6,
+    "emailRegex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+  }
+}
