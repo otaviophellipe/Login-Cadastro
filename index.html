@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="script.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -16,15 +17,17 @@
         <div class="rigth-login">
             <div class="card-login">
                 <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login">Login</button>
+                <form action="login.php" method="post">
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
                 <p class="signup-text" style="color: #f0ffffde;">Não tem login? <a href="cadastro.html" style="color: #e29e3e;">Cadastre-se aqui!</a> </p>
                 <p class="credit-text" style="color: #f0ffffde;">
                     Code by: 
